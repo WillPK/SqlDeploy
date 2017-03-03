@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -30,8 +30,8 @@ namespace SqlDeploy.ConsoleApp
             var files = FindAllFiles();
             
             var result = new Dictionary<int, FileInfo>();
-
-            var pattern = @"^(\d+)\.\s(\w|\s|\.)+.sql$";
+            
+            var pattern = MyConfigManager.GetSqlScriptFileFormat();
             foreach (var file in files)
             {
                 var match = Regex.Match(file.Name, pattern);
