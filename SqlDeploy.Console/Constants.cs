@@ -1,9 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SqlDeploy.ConsoleApp
 {
     public class Constants
@@ -13,6 +7,7 @@ namespace SqlDeploy.ConsoleApp
             public static readonly string DbConnection = "DbConnection";
             public static readonly string VersionTableName = "VersionTableName";
             public static readonly string RootFolder = "RootFolder";
+            public static readonly string SqlScriptFileFormat = "SqlScriptFileFormat";
         }
 
         public static class SqlScripts
