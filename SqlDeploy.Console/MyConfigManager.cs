@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 
 namespace SqlDeploy.ConsoleApp
@@ -13,6 +13,11 @@ namespace SqlDeploy.ConsoleApp
         public static string GetVersionTableName()
         {
             return GetAppSetting(Constants.AppSettingKeyFor.VersionTableName);
+        }
+
+        public static string GetSqlScriptFileFormat()
+        {
+            return GetAppSetting(Constants.AppSettingKeyFor.SqlScriptFileFormat);
         }
 
         public static string GetRootFolder()
